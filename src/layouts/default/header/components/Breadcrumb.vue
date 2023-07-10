@@ -141,7 +141,7 @@
         return routes.indexOf(route) !== routes.length - 1;
       }
 
-      function getIcon(route) {
+      function getIcon(route: { icon: any; meta: { icon: any } }) {
         return route.icon || route.meta?.icon;
       }
 
@@ -157,6 +157,10 @@
     align-items: center;
     padding: 0 8px;
 
+    .ant-breadcrumb {
+      font-size: 17px;
+    }
+
     .ant-breadcrumb-link {
       .anticon {
         margin-right: 4px;
@@ -169,7 +173,7 @@
         color: @breadcrumb-item-normal-color;
 
         a {
-          color: rgb(0 0 0 / 65%);
+          color: rgb(0 0 0 / 100%);
 
           &:hover {
             color: @primary-color;
