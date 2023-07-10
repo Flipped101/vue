@@ -158,7 +158,7 @@
     padding: 0 8px;
 
     .ant-breadcrumb {
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .ant-breadcrumb-link {
